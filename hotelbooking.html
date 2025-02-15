@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking - Hyderabad</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://newsmeter.in/h-upload/2023/10/11/356189-picsart23-10-1112-24-36-713.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            overflow-y: scroll;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .title {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #ffcc00;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            background: #ffcc00;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover, .highlight {
+            background: #ff9900;
+            color: black;
+            transform: scale(1.1);
+        }
+
+        .content {
+            padding-top: 100px;
+        }
+
+        .booking-section {
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+            display: inline-block;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        input, select, button {
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        input, select {
+            background: rgba(255, 255, 255, 0.9);
+            color: black;
+        }
+
+        button {
+            background: linear-gradient(90deg, #ffcc00, #ff9900);
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: linear-gradient(90deg, #ff9900, #ff6600);
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">Hyderabad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="heritage.html">Heritage</a></li>
+                <li><a href="booking.html" class="highlight">Hotel Booking</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="content">
+        <section class="booking-section">
+            <h2>Book Your Stay</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select required>
+                    <option value="">Select Hotel</option>
+                    <option value="taj">Taj Falaknuma Palace</option>
+                    <option value="itc">ITC Kohenur</option>
+                    <option value="marriott">Marriott Hyderabad</option>
+                </select>
+                <input type="date" required>
+                <input type="number" placeholder="Number of Nights" required>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Hyderabad Tourism. All rights reserved.</p>
+    </footer>
+</body>
+</html>
